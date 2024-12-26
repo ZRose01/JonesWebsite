@@ -8,6 +8,10 @@ document.querySelectorAll(".expandable-header").forEach((button) => {
   });
 });
 
+const volunteerLink = "placeholder"
+
 function redir(a){
-  alert(a)
+  if(confirm("Do you want to go to " + a)){
+    window.open(a, '_blank').focus();
+  }
 }
